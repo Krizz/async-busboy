@@ -18,7 +18,7 @@ module.exports = function (request, options) {
     const fields = {};
     const filePromises = [];
 
-    request.on('close', cleanup);
+    //request.on('close', cleanup);
 
     busboy
       .on('field', onField.bind(null, fields))
